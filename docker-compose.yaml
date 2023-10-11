@@ -22,7 +22,7 @@ services:
       WORDPRESS_DB_HOST: db:3306 # o db é o serviço de cima, o 3306 é porta padrão do sql
       WORDPRESS_DB_USER: wordpress
       WORDPRESS_DB_PASSWORD: wordpress
-    volumes:
-      db_data:
+volumes:
+  db_data:
 
 # O wordpress e o db vão se comunicar na rede de container, por isso o o db não tem ports. Para acessar do navegador é só o wordpress.
